@@ -1,0 +1,101 @@
+2024-11-19T12:27:11.520857+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2024-11-19T12:27:11.520857+00:00 app[web.1]: self.load_wsgi()
+2024-11-19T12:27:11.520858+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2024-11-19T12:27:11.520858+00:00 app[web.1]: self.wsgi = self.app.wsgi()
+2024-11-19T12:27:11.520858+00:00 app[web.1]: ^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520859+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2024-11-19T12:27:11.520859+00:00 app[web.1]: self.callable = self.load()
+2024-11-19T12:27:11.520859+00:00 app[web.1]: ^^^^^^^^^^^
+2024-11-19T12:27:11.520859+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2024-11-19T12:27:11.520860+00:00 app[web.1]: return self.load_wsgiapp()
+2024-11-19T12:27:11.520860+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520860+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2024-11-19T12:27:11.520860+00:00 app[web.1]: return util.import_app(self.app_uri)
+2024-11-19T12:27:11.520860+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520861+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/util.py", line 359, in import_app
+2024-11-19T12:27:11.520861+00:00 app[web.1]: mod = importlib.import_module(module)
+2024-11-19T12:27:11.520861+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520861+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/importlib/__init__.py", line 90, in import_module
+2024-11-19T12:27:11.520861+00:00 app[web.1]: return _bootstrap._gcd_import(name[level:], package, level)
+2024-11-19T12:27:11.520862+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520862+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+2024-11-19T12:27:11.520862+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+2024-11-19T12:27:11.520862+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+2024-11-19T12:27:11.520863+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+2024-11-19T12:27:11.520863+00:00 app[web.1]: File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+2024-11-19T12:27:11.520863+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2024-11-19T12:27:11.520863+00:00 app[web.1]: File "/app/codestar/wsgi.py", line 16, in <module>
+2024-11-19T12:27:11.520863+00:00 app[web.1]: application = get_wsgi_application()
+2024-11-19T12:27:11.520864+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520864+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+2024-11-19T12:27:11.520864+00:00 app[web.1]: django.setup(set_prefix=False)
+2024-11-19T12:27:11.520865+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+2024-11-19T12:27:11.520865+00:00 app[web.1]: configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+2024-11-19T12:27:11.520865+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520865+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/django/conf/__init__.py", line 102, in __getattr__
+2024-11-19T12:27:11.520866+00:00 app[web.1]: self._setup(name)
+2024-11-19T12:27:11.520866+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/django/conf/__init__.py", line 89, in _setup
+2024-11-19T12:27:11.520866+00:00 app[web.1]: self._wrapped = Settings(settings_module)
+2024-11-19T12:27:11.520866+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520872+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/django/conf/__init__.py", line 217, in __init__
+2024-11-19T12:27:11.520872+00:00 app[web.1]: mod = importlib.import_module(self.SETTINGS_MODULE)
+2024-11-19T12:27:11.520872+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520872+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/importlib/__init__.py", line 90, in import_module
+2024-11-19T12:27:11.520873+00:00 app[web.1]: return _bootstrap._gcd_import(name[level:], package, level)
+2024-11-19T12:27:11.520873+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520873+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+2024-11-19T12:27:11.520873+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+2024-11-19T12:27:11.520874+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+2024-11-19T12:27:11.520874+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+2024-11-19T12:27:11.520874+00:00 app[web.1]: File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+2024-11-19T12:27:11.520874+00:00 app[web.1]: File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2024-11-19T12:27:11.520874+00:00 app[web.1]: File "/app/codestar/settings.py", line 89, in <module>
+2024-11-19T12:27:11.520874+00:00 app[web.1]: 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+2024-11-19T12:27:11.520875+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.520875+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/dj_database_url.py", line 80, in parse
+2024-11-19T12:27:11.520876+00:00 app[web.1]: if '?' in path and not url.query:
+2024-11-19T12:27:11.520876+00:00 app[web.1]: ^^^^^^^^^^^
+2024-11-19T12:27:11.520876+00:00 app[web.1]: TypeError: a bytes-like object is required, not 'str'
+2024-11-19T12:27:11.520965+00:00 app[web.1]: [2024-11-19 12:27:11 +0000] [9] [INFO] Worker exiting (pid: 9)
+2024-11-19T12:27:11.565391+00:00 app[web.1]: Traceback (most recent call last):
+2024-11-19T12:27:11.565393+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 209, in run
+2024-11-19T12:27:11.565549+00:00 app[web.1]: self.sleep()
+2024-11-19T12:27:11.565584+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 357, in sleep
+2024-11-19T12:27:11.565672+00:00 app[web.1]: ready = select.select([self.PIPE[0]], [], [], 1.0)
+2024-11-19T12:27:11.565804+00:00 app[web.1]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-11-19T12:27:11.565814+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+2024-11-19T12:27:11.565879+00:00 app[web.1]: self.reap_workers()
+2024-11-19T12:27:11.565899+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+2024-11-19T12:27:11.566017+00:00 app[web.1]: raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+2024-11-19T12:27:11.566059+00:00 app[web.1]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+2024-11-19T12:27:11.566063+00:00 app[web.1]: 
+2024-11-19T12:27:11.566064+00:00 app[web.1]: During handling of the above exception, another exception occurred:
+2024-11-19T12:27:11.566074+00:00 app[web.1]: 
+2024-11-19T12:27:11.566075+00:00 app[web.1]: Traceback (most recent call last):
+2024-11-19T12:27:11.566086+00:00 app[web.1]: File "/app/.heroku/python/bin/gunicorn", line 8, in <module>
+2024-11-19T12:27:11.566126+00:00 app[web.1]: sys.exit(run())
+2024-11-19T12:27:11.566177+00:00 app[web.1]: ^^^^^
+2024-11-19T12:27:11.566187+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+2024-11-19T12:27:11.566230+00:00 app[web.1]: WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+2024-11-19T12:27:11.566254+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/base.py", line 231, in run
+2024-11-19T12:27:11.566315+00:00 app[web.1]: super().run()
+2024-11-19T12:27:11.566335+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/app/base.py", line 72, in run
+2024-11-19T12:27:11.566372+00:00 app[web.1]: Arbiter(self).run()
+2024-11-19T12:27:11.566394+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 229, in run
+2024-11-19T12:27:11.566450+00:00 app[web.1]: self.halt(reason=inst.reason, exit_status=inst.exit_status)
+2024-11-19T12:27:11.566477+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 342, in halt
+2024-11-19T12:27:11.566549+00:00 app[web.1]: self.stop()
+2024-11-19T12:27:11.566567+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 390, in stop
+2024-11-19T12:27:11.566643+00:00 app[web.1]: self.kill_workers(sig)
+2024-11-19T12:27:11.566662+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 632, in kill_workers
+2024-11-19T12:27:11.566770+00:00 app[web.1]: self.kill_worker(pid, sig)
+2024-11-19T12:27:11.566792+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 642, in kill_worker
+2024-11-19T12:27:11.566912+00:00 app[web.1]: os.kill(pid, sig)
+2024-11-19T12:27:11.566933+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+2024-11-19T12:27:11.566990+00:00 app[web.1]: self.reap_workers()
+2024-11-19T12:27:11.567008+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.12/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+2024-11-19T12:27:11.567098+00:00 app[web.1]: raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+2024-11-19T12:27:11.567130+00:00 app[web.1]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+2024-11-19T12:27:11.636420+00:00 heroku[web.1]: Process exited with status 1
+2024-11-19T12:27:11.656744+00:00 heroku[web.1]: State changed from up to crashed
+
