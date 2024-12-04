@@ -7,16 +7,26 @@
             <img src="{% static 'images/nobody.jpg' %}" width="75%">
         </div>
         <div class="col-8">
-            <h2>{{ about.title }}</h2>
-            {{ about.content | safe }}
+            <!-- Title goes between these h2 tags -->
+            <h2>CodeStar | project</h2>
+            <!-- Content goes directly underneath this -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Duis ac nunc ac elit aliquet cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Vestibulum non venenatis lorem. Donec nisl tellus, auctor sed lobortis ut, auctor eu orci. 
+            Etiam ac orci lacinia, bibendum dolor ac, gravida nulla. Mauris feugiat nulla quis ante lobortis, sed pharetra nisl volutpat. Etiam tempor condimentum dolor. 
+            Aliquam lacinia mauris id imperdiet mollis. Duis condimentum nec lorem eu dapibus. 
+            Phasellus euismod leo quis nibh dictum, vitae dapibus magna laoreet. 
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+            Ut at augue nec odio congue rutrum non at lacus. Etiam sit amet felis leo. 
+            Pellentesque sed rutrum neque. Phasellus aliquam libero non ipsum viverra gravida.
         </div>
     </div>
     <div class="row">
         <div class="col text-right">
-          <!-- Updated on field goes in here -->
-    
-          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+            <!-- Updated on field goes in here -->
+            <p class="text-end"><em>Updated on: 04/12/2024 </em></p>
         </div>
-      </div>    
+      </div>
 </div>
 {% endblock content %}
+
